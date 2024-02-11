@@ -6,8 +6,8 @@ import {
 	Pagination,
 	ReferenceField,
   } from "react-admin";
-  
-  export const PaymentsReviewsList = () => {
+
+export const BlogsList = () => {
 	return (
 	  <List
 		sort={{ field: "id", order: "DESC" }}
@@ -16,22 +16,16 @@ import {
 	  >
 		<Datagrid>
 		  <TextField source="id" />
-		  <TextField source="payment_id" label="Ödeme ID" />
-		  <ReferenceField
-			label="Firma"
-			source="submerchant_id"
-			reference="submerchants"
-		  >
-			<TextField source="name" />
-		  </ReferenceField>
-		  <TextField source="payment_score" label="Ödeme Skoru" />
-		  <TextField source="payment_comment" label="Ödeme Yorumu" />
+		  <TextField source="address" label="Adres" />
+          <TextField source="name" label="Klinik İsmi"/>
+
+		  <TextField source="phone" label="Telefon Numarası" />
+		  <TextField source="review_rating" label="Değerlendirme Puanı" />
 		  <TextField source="service_provider_score" label="Doktor Skoru" />
-		  <TextField source="service_provider_comment" label="Doktor Yorumu" />
+		  <TextField source="url" label="Klinik Url" />
 		  <DateField source="created_at" label="Oluşturulma Tarihi" />
 		  <DateField source="updated_at" label="Son Güncellenme Tarihi" />
 		</Datagrid>
 	  </List>
 	);
   };
-  

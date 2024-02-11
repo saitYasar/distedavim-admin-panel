@@ -3,10 +3,10 @@ import TextField from "@mui/material/TextField";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import FullScreenLoading from "../../ui/FullScreenLoading"
+import FullScreenLoading from "../../components/ui/FullScreenLoading"
 import { useAuthProvider, useNotify, useRedirect } from 'react-admin';
 import { useState } from "react";
-import PasswordComponent from "../../ui/PasswordInput";
+import PasswordComponent from "../../components/ui/PasswordInput";
 interface FormSubmitEvent extends React.FormEvent<HTMLFormElement> {
     target: HTMLFormElement & {
         telephone: { value: string };

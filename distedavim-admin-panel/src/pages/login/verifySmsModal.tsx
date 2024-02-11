@@ -7,10 +7,10 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
-import customAuthProvider from '../../../../utils/provider/authProvider';
+import customAuthProvider from '../../../utils/provider/authProvider';
 import { useRedirect } from 'react-admin';
 import CloseIcon from '@mui/icons-material/Close';
-import FullScreenLoading from '../../ui/FullScreenLoading';
+import FullScreenLoading from '../../components/ui/FullScreenLoading';
 
 interface AuthVerifySms {
     id: string;

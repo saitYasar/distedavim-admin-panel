@@ -20,7 +20,7 @@ import { BACKEND_URL } from '../../src/constant/api';
 
 import api from '../service/axios';
 
-const apiUrl = BACKEND_URL + '/api/admin';
+const apiUrl = BACKEND_URL + '/api/v2/admin/public';
 
 api.defaults.baseURL = apiUrl;
 
